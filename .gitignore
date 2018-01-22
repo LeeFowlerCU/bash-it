@@ -7,3 +7,6 @@ lib/custom.bash
 .*.un~
 bats
 .idea
+*.sublime-workspace
+*.sublime-project
+enabled/*
