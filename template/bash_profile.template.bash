@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 
+# Source .bashrc if it exists
+if [[ -f ~/.bashrc ]]; then
+  source ~/.bashrc
+fi
+
 # Path to the bash it configuration
 export BASH_IT="{{BASH_IT}}"
 
-# Lock and Load a custom theme file
-# location /.bash_it/themes/
-export BASH_IT_THEME='bobby'
+# Lock and Load a custom theme file in {{BASH_IT}}/themes/ or
+# {{BASH_IT}}/custom/themes/
+export BASH_IT_THEME='auxilium'
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
